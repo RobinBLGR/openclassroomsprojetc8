@@ -82,15 +82,17 @@ main {
   padding: 20px;
   width: 60%;
 }
-#a_propos h3 {
-  margin-top: 0;
-}
 #a_propos .photo_blabla {
   display: flex;
   gap: 30px;
 }
+#a_propos .photo_blabla h3 {
+  margin-top: 0;
+  margin: auto;
+}
 #a_propos .photo_blabla img {
-  height: 50px;
+  height: 80px;
+  border-radius: 50%;
 }
 
 #services {
@@ -112,6 +114,9 @@ main {
   text-align: center;
   border-radius: 20px;
   width: 20%;
+}
+#services .cadres_services .cadre_unique h4 {
+  font-size: 18px;
 }
 #services .cadres_services .cadre_unique img {
   height: 60px;
@@ -228,6 +233,7 @@ main {
   width: 50%;
   padding: 20px;
   padding-left: 50px;
+  padding-bottom: 100px;
 }
 #contact .texte_contact .logo_contact {
   display: flex;
