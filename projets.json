@@ -1,0 +1,20 @@
+[
+    {
+      "titre": "Projet 1",
+      "description": "Description du projet 1",
+      "annee": 2021,
+      "image": "projet1.jpg"
+    },
+    {
+      "titre": "Projet 2",
+      "description": "Description du projet 2",
+      "annee": 2022,
+      "image": "projet2.jpg"
+    },
+    {
+      "titre": "Projet 3",
+      "description": "Description du projet 3",
+      "annee": 2023,
+      "image": "projet3.jpg"
+    },
+  ]
