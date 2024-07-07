@@ -182,38 +182,56 @@ main {
     width: 100%;
     margin-bottom: 50px;
 
-    .cadres_services {
-        display: flex;
-        justify-content: space-around;
-        width: 90%;
-
-        @media (max-width: 768px) {
-            flex-direction: column;
-            justify-content: center;
-            gap: 20px;
-            }
-
-        .cadre_unique {
-            border: 2px black solid;
-            padding: 20px;
-            text-align: center;
-            border-radius: 20px;
-            width: 20%;
-            box-shadow: 1px 1px black;
-
-            @media (max-width: 768px) {
-                width: 90%;
-                }
-
-            h4 {
-                font-size: 18px;
-            }
-
-            img {
-                height: 60px;
-            }
+    @media (max-width: 768px) {
+        margin-bottom: 30px;
         }
+
+    h3 {
+        margin-top: 10px;
     }
+}
+
+#services .cadres_services {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    #services .cadres_services {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+#services .cadre_unique {
+    border: 2px black solid;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    width: 25%;
+    box-shadow: 1px 1px black;
+}
+
+@media (max-width: 768px) {
+    #services .cadre_unique {
+        width: 90%;
+    }
+}
+
+#services .cadre_unique h4 {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+#services .cadre_unique img {
+    height: 60px;
+}
+
+#services .cadre_unique:hover {
+    border: 2px solid #5C9EAD;
 }
 
 #competences {
@@ -276,9 +294,13 @@ main {
 
 #portfolio .mes_projets {
     display: flex;
-    gap: 40px;
+    gap: 60px;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        gap: 30px;
+        }
 }
 
 #portfolio .mes_projets .projet_unique {
@@ -286,10 +308,14 @@ main {
     overflow: hidden;
     cursor: pointer;
     border: 2px black solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
 }
 
 #portfolio .mes_projets .projet_unique img {
     height: 250px;
+    width: 100%;
+    object-fit: cover; // Afficher même dimensions pour chaque vignette
 }
 
 #portfolio .mes_projets .projet_unique::before {
@@ -347,14 +373,18 @@ main {
     margin: 30px;
     width: 100%;
     padding-bottom: 30px;
-
-    @media (max-width: 768px) {
-        padding-bottom: 0;
-        }
+    margin-top: 15px;
+    margin-bottom: 0;
 
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+        
+        h3 {
+            margin: 0;
+        }
         }
 
     .texte_contact {
@@ -442,6 +472,40 @@ main {
           }
 }
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-modal:hover,
+  .close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 footer {
     background-color: #326273;

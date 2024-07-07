@@ -169,11 +169,21 @@ main {
   width: 100%;
   margin-bottom: 50px;
 }
+@media (max-width: 768px) {
+  #services {
+    margin-bottom: 30px;
+  }
+}
+#services h3 {
+  margin-top: 10px;
+}
+
 #services .cadres_services {
   display: flex;
   justify-content: space-around;
   width: 90%;
 }
+
 @media (max-width: 768px) {
   #services .cadres_services {
     flex-direction: column;
@@ -181,24 +191,32 @@ main {
     gap: 20px;
   }
 }
-#services .cadres_services .cadre_unique {
+#services .cadre_unique {
   border: 2px black solid;
   padding: 20px;
   text-align: center;
   border-radius: 20px;
-  width: 20%;
+  width: 25%;
   box-shadow: 1px 1px black;
 }
+
 @media (max-width: 768px) {
-  #services .cadres_services .cadre_unique {
+  #services .cadre_unique {
     width: 90%;
   }
 }
-#services .cadres_services .cadre_unique h4 {
+#services .cadre_unique h4 {
   font-size: 18px;
+  margin: 0;
+  margin-top: 10px;
 }
-#services .cadres_services .cadre_unique img {
+
+#services .cadre_unique img {
   height: 60px;
+}
+
+#services .cadre_unique:hover {
+  border: 2px solid #5C9EAD;
 }
 
 #competences {
@@ -260,9 +278,14 @@ main {
 
 #portfolio .mes_projets {
   display: flex;
-  gap: 40px;
+  gap: 60px;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  #portfolio .mes_projets {
+    gap: 30px;
+  }
 }
 
 #portfolio .mes_projets .projet_unique {
@@ -270,10 +293,15 @@ main {
   overflow: hidden;
   cursor: pointer;
   border: 2px black solid;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 #portfolio .mes_projets .projet_unique img {
   height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #portfolio .mes_projets .projet_unique::before {
@@ -331,16 +359,18 @@ main {
   margin: 30px;
   width: 100%;
   padding-bottom: 30px;
-}
-@media (max-width: 768px) {
-  #contact {
-    padding-bottom: 0;
-  }
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 @media (max-width: 768px) {
   #contact {
     display: flex;
     flex-direction: column;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+  #contact h3 {
+    margin: 0;
   }
 }
 #contact .texte_contact {
@@ -423,6 +453,40 @@ main {
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 16px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: black;
+  text-decoration: none;
   cursor: pointer;
 }
 
