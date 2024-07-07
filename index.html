@@ -6,21 +6,26 @@
     <title>Robin BELLENGUER - PORTFOLIO</title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
     <header>
         <nav>
+            <div class="menu-icon">
+              <i class="fas fa-bars"></i>
+            </div>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#a_propos">Profil</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#realisations">Réalisations</a></li>
-                <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#a_propos">À propos</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#competences">Compétences</a></li>
+              <li><a href="#portfolio">Réalisations</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+          </nav>
     </header>
 
     <main>
@@ -34,11 +39,11 @@
             <div class="quisuisje">
                 <div class="photo_blabla">
                     <img src="images/robin_bellenguer.png"> 
-                    <h3>Qui suis-je ?</h3>
+                    <h3>À propos de moi</h3>
                 </div>
                 <div class="presentation">
-                    <p>Je m'appelle RB, je suis web développeur indépendant. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue, odio a tincidunt lacinia, ligula lacus fermentum orci, in pharetra mauris velit ac augue.</p>
-                    <p>Cras in sapien eget sapien pulvinar iaculis aliquam ac libero. In elementum mauris non lorem bibendum, quis ultrices eros vulputate. Nullam vel ullamcorper nisl. Pellentesque augue augue, finibus eu facilisis eu, lacinia vitae nulla.</p>
+                    <p>Je m'appelle Robin Bellenguer, j'ai toujours été attiré par la création de sites web, et un beau jour, j'ai décidé de franchir le pas et de me lancer.</p>
+                    <p>Désormais, je suis diplômé d'OpenClassrooms "développeur web". Je propose mes services pour vous permettre de concrétiser vos idées et vos envies.</p>
                 </div>
             </div>
         </section>
@@ -77,21 +82,7 @@
         </section>
 
         <section id="portfolio">
-            <h3>Mon portfolio</h3>
-            <div class="mes_projets">
-                <div class="projet_unique" data-titre="Projet 1">
-                    <img src="images/Capture d’écran 2024-07-06 à 16.43.16.png">
-                </div>
-        
-                <div class="projet_unique" data-titre="Projet 2">
-                    <img src="images/Capture d’écran 2024-07-06 à 16.43.16.png">
-                </div>
-        
-                <div class="projet_unique" data-titre="Projet 3">
-                    <img src="images/Capture d’écran 2024-07-06 à 16.43.16.png">
-                </div>
-            </div>
-            
+            <!-- Les images s'insèrent ici dynamiquement -->
         </section>
 
         <section id="contact">
@@ -127,5 +118,6 @@
     </footer>
     </div>
     <script src="script.js"></script>
+    
 </body>
 </html>

@@ -1,14 +1,14 @@
 [
     {
-        "titre": "Projet 1",
-        "image": "images/Capture d'écran 2024-07-06 à 16.43.16.png"
+      "title": "Mon Vieux Grimoire",
+      "src": "images/vieuxgrimoire.png"
     },
     {
-        "titre": "Projet 2",
-        "image": "images/Capture d'écran 2024-07-06 à 16.43.16.png"
+      "title": "Booki",
+      "src": "images/vieuxgrimoire.png"
     },
     {
-        "titre": "Projet 3",
-        "image": "images/Capture d'écran 2024-07-06 à 16.43.16.png"
+      "title": "Plantes et potagers",
+      "src": "images/vieuxgrimoire.png"
     }
-]
+  ]
