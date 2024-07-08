@@ -285,6 +285,7 @@ main {
 @media (max-width: 768px) {
   #portfolio .mes_projets {
     gap: 30px;
+    flex-direction: column;
   }
 }
 
@@ -292,6 +293,7 @@ main {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  flex: 1;
   border: 2px black solid;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -300,8 +302,8 @@ main {
 #portfolio .mes_projets .projet_unique img {
   height: 250px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #portfolio .mes_projets .projet_unique::before {
